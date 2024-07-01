@@ -10,7 +10,7 @@ spec:
         spec:
           containers:
           - name: weather-app
-            image: gerops/weather-app:<tag>
+            image: gerops/weather-app:00190f2
             imagePullPolicy: IfNotPresent
           restartPolicy: OnFailure
           imagePullSecrets:
