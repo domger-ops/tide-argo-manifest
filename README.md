@@ -8,6 +8,6 @@ This repository contains Kubernetes manifests for deploying the Weather Forecast
 
 The repository is organized into the following directories and files:
 
-- `cronjob.yaml`: Defines a Kubernetes CronJob that periodically runs the Weather Forecast CLI application.
+- `cronjob.yaml`: Defines a Kubernetes CronJob that periodically runs the Low Tide application.
 - `namespace.yaml`: Specifies the Kubernetes namespace where the application will be deployed.
 
