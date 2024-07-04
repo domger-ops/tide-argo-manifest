@@ -9,8 +9,8 @@ spec:
       template:
         spec:
           containers:
-          - name: weather-app
-            image: gerops/weather-app:<tag>
+          - name: tide-app
+            image: gerops/tide-app:<tag>
             imagePullPolicy: IfNotPresent
           restartPolicy: OnFailure
           imagePullSecrets:
