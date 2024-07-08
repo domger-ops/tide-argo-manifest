@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: tide-app-cron
 spec:
-  schedule: "10 8 * * *"
+  schedule: "15 7 * * *" # time must be in UTC
   jobTemplate:
     spec:
       template:
