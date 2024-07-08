@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: tide-app
+  namespace: tide-app-ns
+spec:
+  project: domgerops
+  source:
+    repoURL: 'https://github.com/domger-ops/tide-argo-manifest.git'
+    targetRevision: HEAD
+    path: '.'
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: tide-app-ns
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
