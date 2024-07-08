@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: tide-app-cron
 spec:
-  schedule: "55 0 * * *"
+  schedule: "10 8 * * *"
   jobTemplate:
     spec:
       template:
@@ -12,9 +12,6 @@ spec:
           - name: tide-app
             image: gerops/tide-app:a3a9afb
             imagePullPolicy: IfNotPresent
-            env:
-            - name: TZ
-              value: America/Los_Angeles
           restartPolicy: OnFailure
           imagePullSecrets:
           - name: docker-secret
