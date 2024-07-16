@@ -10,7 +10,7 @@ spec:
         spec:
           containers:
           - name: tide-app
-            image: gerops/tide-app:4bbfb56
+            image: gerops/tide-app:3765263
             imagePullPolicy: IfNotPresent
           restartPolicy: OnFailure
           imagePullSecrets:
